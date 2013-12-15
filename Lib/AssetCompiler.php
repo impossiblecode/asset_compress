@@ -127,7 +127,7 @@ class AssetCompiler {
 		$config = array(
 			'paths' => $this->_Config->paths($ext, $target),
 			'target' => $target,
-			'theme' => $this->_Config->theme()
+			//'theme' => $this->_Config->theme()
 		);
 		$filters = $this->_Config->filters($ext, $target);
 		$filterSettings = $this->_Config->filterConfig($filters);

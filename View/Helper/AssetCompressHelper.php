@@ -387,7 +387,8 @@ class AssetCompressHelper extends AppHelper {
 		}
 		if ($devMode || $config->general('alwaysEnableController')) {
 			$baseUrl = str_replace(WWW_ROOT, '/', $path);
-			$route = $this->_getRoute($file, $baseUrl);
+			//$route = $this->_getRoute($file, $baseUrl);
+			$route = $baseUrl . $this->_getBuildName($file);
 		}
 
 		if (DS === '\\') {
